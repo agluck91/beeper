@@ -1,0 +1,26 @@
+/* Catppuccin Teal accent for Beeper.
+ * Paste this after one of the base flavor files. */
+
+:root {
+  --color-primary: var(--ctp-teal) !important;
+  --color-primary-rgb: var(--ctp-teal-rgb) !important;
+  --color-on-primary: var(--ctp-crust) !important;
+  --color-on-primary-rgb: var(--ctp-crust-rgb) !important;
+  --color-background-button-primary: var(--ctp-teal) !important;
+  --color-background-button-primary-active: var(--ctp-sky) !important;
+  --color-background-sidebar-thread-selected: var(--ctp-teal) !important;
+  --color-background-sidebar-thread-selected-unfocused: var(--ctp-teal) !important;
+  --color-background-selected-primary: var(--ctp-teal) !important;
+  --color-background-menu-option-hover: var(--ctp-teal) !important;
+  --color-border-button-secondary-focus: var(--ctp-teal) !important;
+  --color-border-input-active: var(--ctp-teal) !important;
+  --compose-message-accent: var(--ctp-teal) !important;
+  --audio-bar-preview-progress: var(--ctp-teal) !important;
+}
+
+[class*="contents"][class*="isSender"] {
+  --bubble-out-bg: var(--ctp-teal) !important;
+  --bubble-out-fg: var(--ctp-crust) !important;
+  background: var(--ctp-teal) !important;
+  color: var(--ctp-crust) !important;
+}

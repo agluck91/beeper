@@ -1,0 +1,26 @@
+/* Catppuccin Rosewater accent for Beeper.
+ * Paste this after one of the base flavor files. */
+
+:root {
+  --color-primary: var(--ctp-rosewater) !important;
+  --color-primary-rgb: var(--ctp-rosewater-rgb) !important;
+  --color-on-primary: var(--ctp-crust) !important;
+  --color-on-primary-rgb: var(--ctp-crust-rgb) !important;
+  --color-background-button-primary: var(--ctp-rosewater) !important;
+  --color-background-button-primary-active: var(--ctp-flamingo) !important;
+  --color-background-sidebar-thread-selected: var(--ctp-rosewater) !important;
+  --color-background-sidebar-thread-selected-unfocused: var(--ctp-rosewater) !important;
+  --color-background-selected-primary: var(--ctp-rosewater) !important;
+  --color-background-menu-option-hover: var(--ctp-rosewater) !important;
+  --color-border-button-secondary-focus: var(--ctp-rosewater) !important;
+  --color-border-input-active: var(--ctp-rosewater) !important;
+  --compose-message-accent: var(--ctp-rosewater) !important;
+  --audio-bar-preview-progress: var(--ctp-rosewater) !important;
+}
+
+[class*="contents"][class*="isSender"] {
+  --bubble-out-bg: var(--ctp-rosewater) !important;
+  --bubble-out-fg: var(--ctp-crust) !important;
+  background: var(--ctp-rosewater) !important;
+  color: var(--ctp-crust) !important;
+}

@@ -1,0 +1,26 @@
+/* Catppuccin Blue accent for Beeper.
+ * Paste this after one of the base flavor files. */
+
+:root {
+  --color-primary: var(--ctp-blue) !important;
+  --color-primary-rgb: var(--ctp-blue-rgb) !important;
+  --color-on-primary: var(--ctp-crust) !important;
+  --color-on-primary-rgb: var(--ctp-crust-rgb) !important;
+  --color-background-button-primary: var(--ctp-blue) !important;
+  --color-background-button-primary-active: var(--ctp-sapphire) !important;
+  --color-background-sidebar-thread-selected: var(--ctp-blue) !important;
+  --color-background-sidebar-thread-selected-unfocused: var(--ctp-blue) !important;
+  --color-background-selected-primary: var(--ctp-blue) !important;
+  --color-background-menu-option-hover: var(--ctp-blue) !important;
+  --color-border-button-secondary-focus: var(--ctp-blue) !important;
+  --color-border-input-active: var(--ctp-blue) !important;
+  --compose-message-accent: var(--ctp-blue) !important;
+  --audio-bar-preview-progress: var(--ctp-blue) !important;
+}
+
+[class*="contents"][class*="isSender"] {
+  --bubble-out-bg: var(--ctp-blue) !important;
+  --bubble-out-fg: var(--ctp-crust) !important;
+  background: var(--ctp-blue) !important;
+  color: var(--ctp-crust) !important;
+}

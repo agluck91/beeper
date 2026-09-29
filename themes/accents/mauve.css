@@ -1,0 +1,26 @@
+/* Catppuccin Mauve accent for Beeper.
+ * Paste this after one of the base flavor files. */
+
+:root {
+  --color-primary: var(--ctp-mauve) !important;
+  --color-primary-rgb: var(--ctp-mauve-rgb) !important;
+  --color-on-primary: var(--ctp-crust) !important;
+  --color-on-primary-rgb: var(--ctp-crust-rgb) !important;
+  --color-background-button-primary: var(--ctp-mauve) !important;
+  --color-background-button-primary-active: var(--ctp-lavender) !important;
+  --color-background-sidebar-thread-selected: var(--ctp-mauve) !important;
+  --color-background-sidebar-thread-selected-unfocused: var(--ctp-mauve) !important;
+  --color-background-selected-primary: var(--ctp-mauve) !important;
+  --color-background-menu-option-hover: var(--ctp-mauve) !important;
+  --color-border-button-secondary-focus: var(--ctp-mauve) !important;
+  --color-border-input-active: var(--ctp-mauve) !important;
+  --compose-message-accent: var(--ctp-mauve) !important;
+  --audio-bar-preview-progress: var(--ctp-mauve) !important;
+}
+
+[class*="contents"][class*="isSender"] {
+  --bubble-out-bg: var(--ctp-mauve) !important;
+  --bubble-out-fg: var(--ctp-crust) !important;
+  background: var(--ctp-mauve) !important;
+  color: var(--ctp-crust) !important;
+}

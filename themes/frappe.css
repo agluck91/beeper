@@ -1,0 +1,284 @@
+/* Catppuccin Frappe for Beeper Desktop v4. */
+/* Paste this entire file into Settings > Appearance > Custom CSS. */
+/* Source palette: https://github.com/catppuccin/palette */
+/* Fixed flavor: important tokens keep OS light/dark mode from changing it. */
+
+:root {
+  color-scheme: dark !important;
+
+  /* Catppuccin palette */
+  --ctp-rosewater: #f2d5cf !important;
+  --ctp-rosewater-rgb: 242, 213, 207 !important;
+  --ctp-flamingo: #eebebe !important;
+  --ctp-flamingo-rgb: 238, 190, 190 !important;
+  --ctp-pink: #f4b8e4 !important;
+  --ctp-pink-rgb: 244, 184, 228 !important;
+  --ctp-mauve: #ca9ee6 !important;
+  --ctp-mauve-rgb: 202, 158, 230 !important;
+  --ctp-red: #e78284 !important;
+  --ctp-red-rgb: 231, 130, 132 !important;
+  --ctp-maroon: #ea999c !important;
+  --ctp-maroon-rgb: 234, 153, 156 !important;
+  --ctp-peach: #ef9f76 !important;
+  --ctp-peach-rgb: 239, 159, 118 !important;
+  --ctp-yellow: #e5c890 !important;
+  --ctp-yellow-rgb: 229, 200, 144 !important;
+  --ctp-green: #a6d189 !important;
+  --ctp-green-rgb: 166, 209, 137 !important;
+  --ctp-teal: #81c8be !important;
+  --ctp-teal-rgb: 129, 200, 190 !important;
+  --ctp-sky: #99d1db !important;
+  --ctp-sky-rgb: 153, 209, 219 !important;
+  --ctp-sapphire: #85c1dc !important;
+  --ctp-sapphire-rgb: 133, 193, 220 !important;
+  --ctp-blue: #8caaee !important;
+  --ctp-blue-rgb: 140, 170, 238 !important;
+  --ctp-lavender: #babbf1 !important;
+  --ctp-lavender-rgb: 186, 187, 241 !important;
+  --ctp-text: #c6d0f5 !important;
+  --ctp-text-rgb: 198, 208, 245 !important;
+  --ctp-subtext1: #b5bfe2 !important;
+  --ctp-subtext1-rgb: 181, 191, 226 !important;
+  --ctp-subtext0: #a5adce !important;
+  --ctp-subtext0-rgb: 165, 173, 206 !important;
+  --ctp-overlay2: #949cbb !important;
+  --ctp-overlay2-rgb: 148, 156, 187 !important;
+  --ctp-overlay1: #838ba7 !important;
+  --ctp-overlay1-rgb: 131, 139, 167 !important;
+  --ctp-overlay0: #737994 !important;
+  --ctp-overlay0-rgb: 115, 121, 148 !important;
+  --ctp-surface2: #626880 !important;
+  --ctp-surface2-rgb: 98, 104, 128 !important;
+  --ctp-surface1: #51576d !important;
+  --ctp-surface1-rgb: 81, 87, 109 !important;
+  --ctp-surface0: #414559 !important;
+  --ctp-surface0-rgb: 65, 69, 89 !important;
+  --ctp-base: #303446 !important;
+  --ctp-base-rgb: 48, 52, 70 !important;
+  --ctp-mantle: #292c3c !important;
+  --ctp-mantle-rgb: 41, 44, 60 !important;
+  --ctp-crust: #232634 !important;
+  --ctp-crust-rgb: 35, 38, 52 !important;
+
+  /* Beeper v4 tokens */
+  --color-bg: var(--ctp-base) !important;
+  --color-bg-rgb: var(--ctp-base-rgb) !important;
+  --color-fg: var(--ctp-text) !important;
+  --color-fg-rgb: var(--ctp-text-rgb) !important;
+  --color-primary: var(--ctp-mauve) !important;
+  --color-primary-rgb: var(--ctp-mauve-rgb) !important;
+  --color-on-primary: var(--ctp-base) !important;
+  --color-on-primary-rgb: var(--ctp-base-rgb) !important;
+  --color-surface: var(--ctp-base) !important;
+  --color-surface-rgb: var(--ctp-base-rgb) !important;
+  --color-on-surface: var(--ctp-text) !important;
+  --color-on-surface-rgb: var(--ctp-text-rgb) !important;
+  --color-on-surface-variant: var(--ctp-subtext0) !important;
+  --color-secondary-container: var(--ctp-surface0) !important;
+  --color-on-secondary-container: var(--ctp-text) !important;
+  --color-tertiary-container: var(--ctp-surface0) !important;
+  --color-on-tertiary-container: var(--ctp-text) !important;
+  --color-container-inside-secondary-container: var(--ctp-mantle) !important;
+  --color-outline: var(--ctp-surface2) !important;
+  --color-outline-variant: var(--ctp-surface1) !important;
+  --color-gray-rgb: var(--ctp-overlay1-rgb) !important;
+  --color-base-black: var(--ctp-crust) !important;
+  --color-base-black-rgb: var(--ctp-crust-rgb) !important;
+  --color-base-white: var(--ctp-text) !important;
+  --color-base-white-rgb: var(--ctp-text-rgb) !important;
+  --color-base-gray-dark-50: var(--ctp-surface1) !important;
+  --color-base-gray-dark-50-rgb: var(--ctp-surface1-rgb) !important;
+  --color-base-gray-dark-70: var(--ctp-surface2) !important;
+  --color-base-gray-dark-70-rgb: var(--ctp-surface2-rgb) !important;
+  --color-base-gray-dark-80: var(--ctp-overlay0) !important;
+  --color-base-gray-dark-80-rgb: var(--ctp-overlay0-rgb) !important;
+  --color-base-gray-10: var(--ctp-crust) !important;
+  --color-base-gray-10-rgb: var(--ctp-crust-rgb) !important;
+  --color-base-gray-20: var(--ctp-mantle) !important;
+  --color-base-gray-20-rgb: var(--ctp-mantle-rgb) !important;
+  --color-base-gray-30: var(--ctp-base) !important;
+  --color-base-gray-30-rgb: var(--ctp-base-rgb) !important;
+  --color-base-gray-40: var(--ctp-surface0) !important;
+  --color-base-gray-40-rgb: var(--ctp-surface0-rgb) !important;
+  --color-base-gray-50: var(--ctp-surface1) !important;
+  --color-base-gray-50-rgb: var(--ctp-surface1-rgb) !important;
+  --color-base-gray-60: var(--ctp-surface2) !important;
+  --color-base-gray-60-rgb: var(--ctp-surface2-rgb) !important;
+  --color-base-gray-70: var(--ctp-overlay0) !important;
+  --color-base-gray-70-rgb: var(--ctp-overlay0-rgb) !important;
+  --color-base-gray-80: var(--ctp-overlay1) !important;
+  --color-base-gray-80-rgb: var(--ctp-overlay1-rgb) !important;
+  --color-base-gray-85: var(--ctp-overlay2) !important;
+  --color-base-gray-85-rgb: var(--ctp-overlay2-rgb) !important;
+  --color-base-gray-90: var(--ctp-subtext0) !important;
+  --color-base-gray-90-rgb: var(--ctp-subtext0-rgb) !important;
+  --color-base-gray-100: var(--ctp-subtext1) !important;
+  --color-base-gray-100-rgb: var(--ctp-subtext1-rgb) !important;
+  --color-base-gray-120: var(--ctp-text) !important;
+  --color-base-gray-120-rgb: var(--ctp-text-rgb) !important;
+  --color-base-gray-110: var(--ctp-subtext1) !important;
+  --color-base-gray-110-rgb: var(--ctp-subtext1-rgb) !important;
+  --color-base-system-blue-80: var(--ctp-lavender) !important;
+  --color-base-system-blue-80-rgb: var(--ctp-lavender-rgb) !important;
+  --color-base-system-blue-90: var(--ctp-mauve) !important;
+  --color-base-system-blue-90-rgb: var(--ctp-mauve-rgb) !important;
+  --color-base-system-blue-100: var(--ctp-blue) !important;
+  --color-base-system-blue-100-rgb: var(--ctp-blue-rgb) !important;
+  --color-base-system-blue-110: var(--ctp-sapphire) !important;
+  --color-base-system-blue-110-rgb: var(--ctp-sapphire-rgb) !important;
+  --color-background-app: var(--ctp-base) !important;
+  --color-background-app-weak: var(--ctp-mantle) !important;
+  --color-background-elevated: var(--ctp-surface0) !important;
+  --color-background-elevated-hover: var(--ctp-surface1) !important;
+  --color-background-grouped: var(--ctp-mantle) !important;
+  --color-background-grouped-weak: var(--ctp-crust) !important;
+  --color-background-object: var(--ctp-surface0) !important;
+  --color-background-button-primary: var(--ctp-mauve) !important;
+  --color-background-button-primary-active: var(--ctp-blue) !important;
+  --color-background-button-primary-disabled: var(--ctp-surface2) !important;
+  --color-background-button-secondary: var(--ctp-surface0) !important;
+  --color-background-button-secondary-active: var(--ctp-surface1) !important;
+  --color-background-button-secondary-disabled: var(--ctp-mantle) !important;
+  --color-text-button-secondary: var(--ctp-text) !important;
+  --color-text-button-secondary-disabled: var(--ctp-subtext0) !important;
+  --color-border-button-secondary: var(--ctp-surface2) !important;
+  --color-border-button-secondary-active: var(--ctp-overlay0) !important;
+  --color-border-button-secondary-focus: var(--ctp-mauve) !important;
+  --color-border-button-secondary-disabled: var(--ctp-surface1) !important;
+  --color-background-button-translucent: rgba(var(--ctp-text-rgb), 0.1) !important;
+  --color-background-button-translucent-active: rgba(var(--ctp-text-rgb), 0.16) !important;
+  --color-background-button-translucent-disabled: rgba(var(--ctp-text-rgb), 0.05) !important;
+  --color-background-sidebar: var(--ctp-mantle) !important;
+  --color-background-sidebar-opaque: var(--ctp-mantle) !important;
+  --color-background-sidebar-thread-focus: var(--ctp-surface0) !important;
+  --color-background-sidebar-thread-selected: var(--ctp-mauve) !important;
+  --color-background-sidebar-thread-selected-unfocused: var(--ctp-mauve) !important;
+  --color-background-message-active: var(--ctp-surface0) !important;
+  --color-background-message-bubble-received: var(--ctp-surface0) !important;
+  --color-background-message-bubble-sent: var(--ctp-mantle) !important;
+  --color-background-message-bubble-linked: var(--ctp-mantle) !important;
+  --color-background-selected-primary: var(--ctp-mauve) !important;
+  --color-background-selected-secondary: var(--ctp-surface1) !important;
+  --color-background-input: var(--ctp-mantle) !important;
+  --color-background-kbd: var(--ctp-surface1) !important;
+  --color-background-header-right: var(--ctp-mantle) !important;
+  --color-background-header-right-opaque: var(--ctp-mantle) !important;
+  --color-background-menu: var(--ctp-surface0) !important;
+  --color-background-menu-opaque: var(--ctp-surface0) !important;
+  --color-background-menu-option-hover: var(--ctp-mauve) !important;
+  --color-border-neutrals: var(--ctp-surface1) !important;
+  --color-border-neutrals-strong: var(--ctp-surface2) !important;
+  --color-border-neutrals-weak: var(--ctp-surface0) !important;
+  --color-border-input: var(--ctp-surface2) !important;
+  --color-border-input-active: var(--ctp-mauve) !important;
+  --color-border-translucent: rgba(var(--ctp-text-rgb), 0.1) !important;
+  --color-border-translucent-strong: rgba(var(--ctp-text-rgb), 0.18) !important;
+  --color-border-translucent-strongest: rgba(var(--ctp-text-rgb), 0.5) !important;
+  --color-border-translucent-weak: rgba(var(--ctp-text-rgb), 0.05) !important;
+  --color-text-neutrals: var(--ctp-text) !important;
+  --color-text-neutrals-subtle: var(--ctp-subtext0) !important;
+  --color-text-neutrals-weak: var(--ctp-subtext1) !important;
+  --color-text-on-accent: var(--ctp-base) !important;
+  --color-text-on-accent-weak: rgba(var(--ctp-base-rgb), 0.8) !important;
+  --color-text-translucent: rgba(var(--ctp-text-rgb), 0.95) !important;
+  --color-text-translucent-subtle: rgba(var(--ctp-text-rgb), 0.6) !important;
+  --color-text-translucent-weak: rgba(var(--ctp-text-rgb), 0.78) !important;
+  --color-icon-neutrals: var(--ctp-subtext1) !important;
+  --color-icon-neutrals-strong: var(--ctp-text) !important;
+  --color-icon-neutrals-subtle: var(--ctp-overlay1) !important;
+  --color-icon-neutrals-weak: var(--ctp-subtext0) !important;
+  --color-icon-on-accent: rgba(var(--ctp-base-rgb), 0.82) !important;
+  --color-icon-on-accent-strong: var(--ctp-base) !important;
+  --color-icon-on-accent-weak: rgba(var(--ctp-base-rgb), 0.62) !important;
+  --color-icon-translucent: rgba(var(--ctp-text-rgb), 0.66) !important;
+  --color-icon-translucent-strong: rgba(var(--ctp-text-rgb), 0.95) !important;
+  --color-icon-translucent-subtle: rgba(var(--ctp-text-rgb), 0.4) !important;
+  --color-icon-translucent-weak: rgba(var(--ctp-text-rgb), 0.55) !important;
+  --color-background-scrollbar: var(--ctp-surface2) !important;
+  --color-background-scrollbar-hover: var(--ctp-overlay0) !important;
+  --color-background-tag: var(--ctp-surface0) !important;
+  --color-overlay-modal: rgba(var(--ctp-crust-rgb), 0.72) !important;
+  --color-transparent: rgba(var(--ctp-base-rgb), 0) !important;
+  --left-pane-bg: var(--ctp-mantle) !important;
+  --right-pane-bg: var(--ctp-base) !important;
+  --mark-bg: var(--ctp-yellow) !important;
+  --error-color: var(--ctp-red) !important;
+  --warning-color: var(--ctp-yellow) !important;
+  --snoozed-indicator-bg: var(--ctp-yellow) !important;
+  --error-indicator-bg: var(--ctp-red) !important;
+  --message-snoozed-border: var(--ctp-yellow) !important;
+  --message-errored-beacon: var(--ctp-red) !important;
+  --sms-sent-bg: var(--ctp-green) !important;
+  --compose-message-accent: var(--ctp-mauve) !important;
+  --audio-bar-button: var(--ctp-text) !important;
+  --audio-bar-preview-progress: var(--ctp-mauve) !important;
+  --audio-bar-bg: var(--ctp-surface0) !important;
+  --audio-bar-border: var(--ctp-surface1) !important;
+  --key-border: var(--ctp-surface2) !important;
+  --key-bg: var(--ctp-surface0) !important;
+  --color-key-bottom-bg: var(--ctp-surface1) !important;
+  --prefs-well: var(--ctp-mantle) !important;
+}
+
+/* Beeper also scopes opaque surfaces to these classes. */
+.no-transparency,
+.reduce-transparency {
+  --left-pane-bg: var(--ctp-mantle) !important;
+  --color-background-header-right: var(--ctp-mantle) !important;
+  --color-background-menu: var(--ctp-surface0) !important;
+}
+
+/* Beeper v4 assigns outgoing colors per message through --bubble-out-*.
+ * Keep Mauve for the interface accent while sent bubbles use Sapphire. */
+[class*="contents"][class*="isSender"] {
+  --bubble-out-bg: var(--ctp-mantle) !important;
+  --bubble-out-fg: var(--ctp-text) !important;
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+/* Current Beeper v4 component: incoming bubbles use the secondary container.
+ * Surface 0 keeps them distinct from the Base conversation background. */
+._contents_jr8t9_1:not(._isSender_jr8t9_1) {
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+/* Compose controls and legacy preferences buttons use v4 container tokens. */
+button.btn-solid-secondary {
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface2) !important;
+  box-shadow: none !important;
+}
+
+button.btn-solid-secondary:disabled {
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-subtext0) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+._input_1bg0v_31,
+.ComposeMessage-module__input {
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border: 1px solid var(--ctp-surface2) !important;
+}
+
+/* Beeper's dark-mode fallback can make pinned sender-name pills white.
+ * Keep their label and nub legible in every Catppuccin flavor. */
+._text_1n8tl_129,
+.PinnedThreadListItem-module__text {
+  --bubble-bg-color: var(--ctp-surface0) !important;
+  --bubble-fg-color: var(--ctp-text) !important;
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+._textNub_1n8tl_161,
+._activityIndicator_1n8tl_93,
+.PinnedThreadListItem-module__textNub,
+.PinnedThreadListItem-module__activityIndicator {
+  --bubble-bg-color: var(--ctp-surface0) !important;
+  --bubble-fg-color: var(--ctp-text) !important;
+}
