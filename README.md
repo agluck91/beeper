@@ -1,45 +1,63 @@
-<div align="center">
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	Catppuccin for <a href="https://beeper.com">Beeper</a>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+</h3>
 
-# Catppuccin for Beeper
+<p align="center">
+	<a href="https://github.com/catppuccin/beeper/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/beeper?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/beeper/issues"><img src="https://img.shields.io/github/issues/catppuccin/beeper?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/beeper/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/beeper?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
 
-😸 Soothing pastel theme for Beeper Desktop
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
+</p>
 
-</div>
+## Previews
 
-Four standalone themes for Beeper Desktop v4, using the official Catppuccin palette. Each file colors the app panes, conversation list, message bubbles, composer, menus, controls, and status indicators. Mauve is the base interface accent. Latte uses Sapphire for sent-message bubbles; the dark flavors use Mantle for sent messages and Surface 0 for received messages. Accent variants can be added later.
-
-## Flavors
-
-| Flavor | Theme file | Appearance |
-| --- | --- | --- |
-| 🌻 Latte | [latte.css](themes/latte.css) | Light |
-| 🪴 Frappé | [frappe.css](themes/frappe.css) | Dark |
-| 🌺 Macchiato | [macchiato.css](themes/macchiato.css) | Dark |
-| 🌿 Mocha | [mocha.css](themes/mocha.css) | Dark |
+<details>
+<summary>🌻 Latte</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+</details>
 
 ## Usage
 
 1. Open the CSS file for your preferred flavor and copy its entire contents.
-2. In Beeper Desktop v4, open **Settings → Appearance → Custom CSS → Open CSS file in editor**.
+2. Open **Settings** > **Appearance** > **Custom CSS** > **Open CSS file in editor**.
 3. Replace the editor contents with the copied CSS and save.
 4. Back in Beeper, click **Reload CSS**.
+5. Enjoy!
 
 Each file is self-contained. Install one flavor at a time. To return to Beeper's default appearance, use **Reset CSS** in the same settings panel. The flavor stays fixed when your system changes between light and dark appearance.
 
-## Palette and compatibility
-
-The themes use [Catppuccin's official colors](https://github.com/catppuccin/catppuccin#-palette) and [style guide](https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md): Base for the conversation pane, Mantle for the sidebar, Surface colors for controls and received messages, Text and Subtext for copy, and Mauve for selected items and sent messages. Green, Yellow, and Red retain their status meanings.
-
-These files target the [Beeper Desktop v4 custom properties](https://github.com/beeper/themes/blob/main/current-v4/variables.css), including active v4 surface tokens and direct message rules. Current Beeper versions render outgoing bubbles from per-message `--bubble-out-*` properties and incoming bubbles from `--color-secondary-container`. Beeper can change those properties between releases, so please report visual regressions with the Beeper version, flavor, and a screenshot.
-
 ## 💝 Thanks to
 
-- [Catppuccin](https://github.com/catppuccin/catppuccin) for the palette, style guide, and [port guidelines](https://github.com/catppuccin/catppuccin/blob/main/docs/port-creation.md).
-- [harukayamazaki](https://github.com/catppuccin/catppuccin/discussions/2205) for the original Beeper port request.
-- [PoorPocketsMcNewHold](https://gist.github.com/PoorPocketsMcNewHold/4ae6d7052208d01103159a0617d77316) for the Frappé theme reference.
-- [Beeper's theme contributors](https://github.com/beeper/themes) for documenting the v4 custom properties and installation flow.
+- [Andrew Glück](https://github.com/agluck91)
 
-## License
+&nbsp;
 
-[MIT](LICENSE)
-# beeper
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+
+<p align="center">
+	Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+</p>
+
+<p align="center">
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+</p>
